@@ -11,14 +11,14 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.block.*;
 import org.bukkit.event.entity.EntityChangeBlockEvent;
 import org.bukkit.event.world.StructureGrowEvent;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import java.util.Arrays;
 import java.util.EnumSet;
 import java.util.Set;
 
 public class PhysicsHandler extends LimitHandler {
 
-    public PhysicsHandler(RichWorld plugin) {
+    public PhysicsHandler(CoreMc plugin) {
         super(plugin, "physics");
     }
 

@@ -6,7 +6,7 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.player.PlayerEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.component.AutoConfigurableHandler;
 import ru.kvaytg.coremc.config.constants.ConfigSection;
 
@@ -15,7 +15,7 @@ public class ConnectionHandler extends AutoConfigurableHandler {
     private String joinMessage;
     private String quitMessage;
 
-    public ConnectionHandler(RichWorld plugin) {
+    public ConnectionHandler(CoreMc plugin) {
         super(plugin, ConfigSection.CONSOLE.getDotPath(), "logJoinAndQuit");
     }
 

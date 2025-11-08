@@ -12,7 +12,7 @@ import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.hanging.HangingBreakByEntityEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.utils.BukkitUtils;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -22,7 +22,7 @@ public class BlockHandler extends LimitHandler {
 
     private Set<Material> interactableMaterials;
 
-    public BlockHandler(RichWorld plugin) {
+    public BlockHandler(CoreMc plugin) {
         super(plugin, "blocks");
     }
 

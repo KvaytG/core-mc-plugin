@@ -10,7 +10,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntitySpawnEvent;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import java.util.List;
 
 public class MobHandler extends PerkHandler {
@@ -24,7 +24,7 @@ public class MobHandler extends PerkHandler {
 
     private BlockData bloodData;
 
-    public MobHandler(RichWorld plugin) {
+    public MobHandler(CoreMc plugin) {
         super(plugin, "onlyMobs");
     }
 

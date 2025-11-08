@@ -3,7 +3,7 @@ package ru.kvaytg.coremc.command;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.component.AbstractCommand;
 import ru.kvaytg.coremc.config.constants.Placeholder;
 import ru.kvaytg.coremc.message.Messages;
@@ -12,7 +12,7 @@ import ru.kvaytg.coremc.utils.BukkitUtils;
 
 public class KillCommand extends AbstractCommand {
 
-    public KillCommand(RichWorld plugin) {
+    public KillCommand(CoreMc plugin) {
         super(plugin, "kill");
     }
 

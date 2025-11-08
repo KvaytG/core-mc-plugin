@@ -2,7 +2,7 @@ package ru.kvaytg.coremc.command;
 
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.component.AbstractCommand;
 import ru.kvaytg.coremc.config.ConfigManager;
 import ru.kvaytg.coremc.config.constants.Placeholder;
@@ -16,7 +16,7 @@ public class WarpCommand extends AbstractCommand {
 
     private final WarpConfig warpConfig;
 
-    public WarpCommand(RichWorld plugin) {
+    public WarpCommand(CoreMc plugin) {
         super(plugin, "warp");
         warpConfig = ConfigManager.INSTANCE.getWarpConfig();
     }

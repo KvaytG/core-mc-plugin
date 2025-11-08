@@ -7,14 +7,14 @@ import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.PlayerInventory;
 import ru.kvaytg.coremc.ProjectInfo;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.component.AbstractHandler;
 
 public class BukkitUtils {
 
     private BukkitUtils() {}
 
-    public static void registerHandler(AbstractHandler handler, RichWorld plugin) {
+    public static void registerHandler(AbstractHandler handler, CoreMc plugin) {
         if (!handler.isEnabled()) return;
         Bukkit.getPluginManager().registerEvents(handler, plugin);
     }

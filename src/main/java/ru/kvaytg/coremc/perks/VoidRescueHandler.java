@@ -5,7 +5,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntityDamageEvent.DamageCause;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.config.ConfigManager;
 import ru.kvaytg.coremc.warp.Warp;
 import ru.kvaytg.coremc.config.WarpConfig;
@@ -14,7 +14,7 @@ public class VoidRescueHandler extends PerkHandler {
 
     private Warp warp;
 
-    public VoidRescueHandler(RichWorld plugin) {
+    public VoidRescueHandler(CoreMc plugin) {
         super(plugin, "voidRescue");
     }
 

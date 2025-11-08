@@ -1,6 +1,6 @@
-name: RichWorld
+name: CoreMc
 author: KvaytG
-main: ru.kvaytg.coremc.RichWorld
+main: ru.kvaytg.coremc.CoreMc
 version: 1.0.0
 api-version: 1.13
 commands:

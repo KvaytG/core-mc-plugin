@@ -1,14 +1,14 @@
 package ru.kvaytg.coremc.component;
 
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.utils.StringUtils;
 
 public abstract class AutoRegistered extends Enabling {
 
-    private final RichWorld plugin;
+    private final CoreMc plugin;
     private final String name;
 
-    public RichWorld getPlugin() {
+    public CoreMc getPlugin() {
         return plugin;
     }
 
@@ -16,7 +16,7 @@ public abstract class AutoRegistered extends Enabling {
         return StringUtils.isNullOrBlank(name) ? null : name;
     }
 
-    public AutoRegistered(RichWorld plugin, boolean enabled, String name) {
+    public AutoRegistered(CoreMc plugin, boolean enabled, String name) {
         super(enabled);
         this.plugin = plugin;
         this.name = name;
@@ -27,6 +27,6 @@ public abstract class AutoRegistered extends Enabling {
 
     public void init() {}
 
-    public abstract void register(RichWorld plugin);
+    public abstract void register(CoreMc plugin);
 
 }

@@ -1,13 +1,13 @@
 package ru.kvaytg.coremc.config;
 
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.message.Message;
 import ru.kvaytg.coremc.message.Messages;
 import ru.kvaytg.coremc.utils.StringUtils;
 
 public class MessageConfig extends AbstractConfig {
 
-    public MessageConfig(RichWorld plugin) {
+    public MessageConfig(CoreMc plugin) {
         super(plugin, "messages.yml");
         Messages.init(this);
     }

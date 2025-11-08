@@ -3,13 +3,13 @@ package ru.kvaytg.coremc.perks;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 
 public class SpeedHandler extends PerkHandler {
 
     private float walkSpeed;
 
-    public SpeedHandler(RichWorld plugin) {
+    public SpeedHandler(CoreMc plugin) {
         super(plugin, "walkSpeed");
     }
 

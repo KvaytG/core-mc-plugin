@@ -8,14 +8,14 @@ import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.messaging.Messenger;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 
 public class ReflectionPayloadPacket {
 
-   private final RichWorld plugin;
+   private final CoreMc plugin;
    private final String channel;
 
-   public ReflectionPayloadPacket(RichWorld plugin) {
+   public ReflectionPayloadPacket(CoreMc plugin) {
       this.plugin = plugin;
       this.channel = "minecraft:brand";
       Messenger messenger = Bukkit.getMessenger();

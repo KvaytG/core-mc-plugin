@@ -6,7 +6,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.messaging.Messenger;
 import org.bukkit.plugin.messaging.PluginMessageListener;
 import org.jetbrains.annotations.NotNull;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 
 public enum AntiWorldDownloader implements PluginMessageListener {
 
@@ -15,10 +15,10 @@ public enum AntiWorldDownloader implements PluginMessageListener {
     public static final String CHANNEL_INIT = "wdl:init";
     public static final String CHANNEL_CONTROL = "wdl:control";
 
-    private RichWorld plugin;
+    private CoreMc plugin;
     private Messenger messenger;
 
-    public void init(RichWorld plugin) {
+    public void init(CoreMc plugin) {
         this.plugin = plugin;
         this.messenger = plugin.getServer().getMessenger();
         messenger.registerIncomingPluginChannel(plugin, CHANNEL_INIT, this);

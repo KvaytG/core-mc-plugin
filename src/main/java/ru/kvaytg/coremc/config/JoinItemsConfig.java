@@ -3,7 +3,7 @@ package ru.kvaytg.coremc.config;
 import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.configuration.ConfigurationSection;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.joinitems.JoinItem;
 import ru.kvaytg.coremc.utils.ConfigUtils;
 import ru.kvaytg.coremc.utils.StringUtils;
@@ -20,7 +20,7 @@ public class JoinItemsConfig extends AbstractConfig {
     private final boolean clearInventoryOnJoin;
     private final List<JoinItem> joinItems;
 
-    public JoinItemsConfig(RichWorld plugin) {
+    public JoinItemsConfig(CoreMc plugin) {
         super(plugin, "items.yml");
         this.logger = plugin.getLogger();
         this.clearInventoryOnJoin = getConfig().getBoolean("clearInventoryOnJoin", false);

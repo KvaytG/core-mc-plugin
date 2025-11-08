@@ -8,7 +8,7 @@ import ru.kvaytg.coremc.utils.other.PaperLib;
 import ru.kvaytg.coremc.vanish.VanishManager;
 import ru.kvaytg.coremc.world.WorldChanger;
 
-public class RichWorld extends JavaPlugin {
+public class CoreMc extends JavaPlugin {
 
     @Override
     public void onEnable() {

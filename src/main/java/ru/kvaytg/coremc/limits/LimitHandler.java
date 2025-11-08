@@ -1,7 +1,7 @@
 package ru.kvaytg.coremc.limits;
 
 import org.bukkit.World;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.component.AutoConfigurableHandler;
 import ru.kvaytg.coremc.config.ConfigManager;
 import ru.kvaytg.coremc.config.constants.ConfigParameter;
@@ -19,7 +19,7 @@ public abstract class LimitHandler extends AutoConfigurableHandler {
         return ConfigSection.LIMITS.getDotPath().add(configSection);
     }
 
-    public LimitHandler(RichWorld plugin, String configSection) {
+    public LimitHandler(CoreMc plugin, String configSection) {
         super(plugin, getUpdatedPath(configSection));
         worlds = ConfigUtils.getWorlds(
                 ConfigManager.INSTANCE.getMainConfig(),

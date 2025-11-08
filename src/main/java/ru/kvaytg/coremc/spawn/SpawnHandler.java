@@ -7,7 +7,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.component.AutoConfigurableHandler;
 import ru.kvaytg.coremc.config.ConfigManager;
 import ru.kvaytg.coremc.config.constants.ConfigSection;
@@ -19,7 +19,7 @@ public class SpawnHandler extends AutoConfigurableHandler {
 
     private final Location location;
 
-    public SpawnHandler(RichWorld plugin) {
+    public SpawnHandler(CoreMc plugin) {
         super(plugin, ConfigSection.SPAWN.getDotPath());
         location = getWarpLocation(getConfigString("warp"));
     }

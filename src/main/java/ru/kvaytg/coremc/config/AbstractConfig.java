@@ -1,7 +1,7 @@
 package ru.kvaytg.coremc.config;
 
 import org.bukkit.configuration.file.YamlConfiguration;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.utils.other.DotPath;
 import java.io.File;
 import java.util.List;
@@ -14,11 +14,11 @@ public abstract class AbstractConfig {
         return config;
     }
 
-    public AbstractConfig(RichWorld plugin, String fileName) {
+    public AbstractConfig(CoreMc plugin, String fileName) {
         this.config = saveConfigFile(plugin, fileName);
     }
 
-    private YamlConfiguration saveConfigFile(RichWorld plugin, String fileName) {
+    private YamlConfiguration saveConfigFile(CoreMc plugin, String fileName) {
         File configFile = new File(plugin.getDataFolder(), fileName);
         if (!configFile.exists()) {
             plugin.saveResource(configFile.getName(), false);

@@ -6,14 +6,14 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntityDamageEvent.DamageCause;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 
 public class HungerHandler extends PerkHandler {
 
     public static int MAX_SATIETY = 20;
     private boolean infinite;
 
-    public HungerHandler(RichWorld plugin) {
+    public HungerHandler(CoreMc plugin) {
         super(plugin, "foodLevel");
     }
 

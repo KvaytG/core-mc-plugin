@@ -3,11 +3,11 @@ package ru.kvaytg.coremc.hidestream;
 import net.kyori.adventure.text.Component;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerKickEvent;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 
 public class KickHandler extends HideStreamHandler{
 
-    public KickHandler(RichWorld plugin) {
+    public KickHandler(CoreMc plugin) {
         super(plugin, "kick");
     }
 

@@ -13,7 +13,7 @@ import ru.kvaytg.coremc.limits.*;
 import ru.kvaytg.coremc.perks.*;
 import ru.kvaytg.coremc.spawn.SpawnHandler;
 
-public record ComponentManager(RichWorld plugin) {
+public record ComponentManager(CoreMc plugin) {
 
     private void registerComponent(AutoRegistered component) {
         component.register(plugin);

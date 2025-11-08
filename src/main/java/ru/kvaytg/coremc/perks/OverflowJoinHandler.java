@@ -3,13 +3,13 @@ package ru.kvaytg.coremc.perks;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerLoginEvent;
 import org.bukkit.event.server.ServerListPingEvent;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 
 public class OverflowJoinHandler extends PerkHandler {
 
     private int slots;
 
-    public OverflowJoinHandler(RichWorld plugin) {
+    public OverflowJoinHandler(CoreMc plugin) {
         super(plugin, "overflowJoin");
     }
 

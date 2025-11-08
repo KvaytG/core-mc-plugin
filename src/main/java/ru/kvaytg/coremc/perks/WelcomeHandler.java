@@ -5,11 +5,11 @@ import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 
 public class WelcomeHandler extends PerkHandler {
 
-    public WelcomeHandler(RichWorld plugin) {
+    public WelcomeHandler(CoreMc plugin) {
         super(plugin, "welcomeSequence");
     }
 

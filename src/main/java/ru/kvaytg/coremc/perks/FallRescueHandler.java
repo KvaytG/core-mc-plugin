@@ -5,11 +5,11 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.EntityDamageEvent.DamageCause;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 
 public class FallRescueHandler extends PerkHandler {
 
-    public FallRescueHandler(RichWorld plugin) {
+    public FallRescueHandler(CoreMc plugin) {
         super(plugin, "fallRescue");
     }
 

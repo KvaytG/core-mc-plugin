@@ -9,12 +9,12 @@ import org.bukkit.event.entity.EntityPortalEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerPortalEvent;
 import org.bukkit.event.world.PortalCreateEvent;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.utils.BukkitUtils;
 
 public class PortalHandler extends LimitHandler {
 
-    public PortalHandler(RichWorld plugin) {
+    public PortalHandler(CoreMc plugin) {
         super(plugin, "portals");
     }
 

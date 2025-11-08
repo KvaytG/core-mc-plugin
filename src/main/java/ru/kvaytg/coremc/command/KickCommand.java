@@ -4,7 +4,7 @@ import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.component.AbstractCommand;
 import ru.kvaytg.coremc.config.constants.Placeholder;
 import ru.kvaytg.coremc.message.Messages;
@@ -14,7 +14,7 @@ import java.util.Arrays;
 
 public class KickCommand extends AbstractCommand {
 
-    public KickCommand(RichWorld plugin) {
+    public KickCommand(CoreMc plugin) {
         super(plugin, "kick");
     }
 

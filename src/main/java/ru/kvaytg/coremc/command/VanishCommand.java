@@ -2,7 +2,7 @@ package ru.kvaytg.coremc.command;
 
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.component.AbstractCommand;
 import ru.kvaytg.coremc.config.constants.Placeholder;
 import ru.kvaytg.coremc.message.Messages;
@@ -21,7 +21,7 @@ public class VanishCommand extends AbstractCommand {
     private final Map<VanishStatus, Messages> meOtherMessages = new HashMap<>();
     private final Map<VanishStatus, Messages> othersMessages = new HashMap<>();
 
-    public VanishCommand(RichWorld plugin) {
+    public VanishCommand(CoreMc plugin) {
         super(plugin, "vanish");
         vanishManager = VanishManager.INSTANCE;
         meMessages.put(VanishStatus.ENABLED, Messages.VANISH_HIDE_ME);

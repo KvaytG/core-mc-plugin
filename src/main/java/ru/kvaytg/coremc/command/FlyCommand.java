@@ -2,14 +2,14 @@ package ru.kvaytg.coremc.command;
 
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.component.AbstractCommand;
 import ru.kvaytg.coremc.message.Messages;
 import ru.kvaytg.coremc.permission.Permissions;
 
 public class FlyCommand extends AbstractCommand {
 
-    public FlyCommand(RichWorld plugin) {
+    public FlyCommand(CoreMc plugin) {
         super(plugin, "fly");
     }
 

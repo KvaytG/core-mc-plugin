@@ -5,11 +5,11 @@ import org.bukkit.entity.Player;
 import org.bukkit.entity.Projectile;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 
 public class FightsHandler extends PerkHandler {
 
-    public FightsHandler(RichWorld plugin) {
+    public FightsHandler(CoreMc plugin) {
         super(plugin, "preventFights");
     }
 

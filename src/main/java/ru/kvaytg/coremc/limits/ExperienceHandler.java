@@ -6,11 +6,11 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.block.BlockExpEvent;
 import org.bukkit.event.player.PlayerExpChangeEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 
 public class ExperienceHandler extends LimitHandler {
 
-    public ExperienceHandler(RichWorld plugin) {
+    public ExperienceHandler(CoreMc plugin) {
         super(plugin, "experience");
     }
 

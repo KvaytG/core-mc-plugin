@@ -4,7 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.configuration.ConfigurationSection;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.warp.Warp;
 import ru.kvaytg.coremc.utils.StringUtils;
 import ru.kvaytg.coremc.utils.other.DotPath;
@@ -16,7 +16,7 @@ public class WarpConfig extends AbstractConfig {
 
     private final Set<Warp> warps;
 
-    public WarpConfig(RichWorld plugin) {
+    public WarpConfig(CoreMc plugin) {
         super(plugin, "warps.yml");
         this.warps = new HashSet<>();
         load(plugin.getLogger());

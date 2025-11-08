@@ -3,11 +3,11 @@ package ru.kvaytg.coremc.hidestream;
 import net.kyori.adventure.text.Component;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 
 public class JoinHandler extends HideStreamHandler {
 
-    public JoinHandler(RichWorld plugin) {
+    public JoinHandler(CoreMc plugin) {
         super(plugin, "join");
     }
 

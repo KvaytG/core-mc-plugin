@@ -1,6 +1,6 @@
 package ru.kvaytg.coremc.config;
 
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.permission.Permission;
 import ru.kvaytg.coremc.permission.Permissions;
 import ru.kvaytg.coremc.utils.StringUtils;
@@ -8,7 +8,7 @@ import ru.kvaytg.coremc.utils.other.DotPath;
 
 public class PermissionConfig extends AbstractConfig {
 
-    public PermissionConfig(RichWorld plugin) {
+    public PermissionConfig(CoreMc plugin) {
         super(plugin, "permissions.yml");
         Permissions.init(this);
     }

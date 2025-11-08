@@ -3,12 +3,12 @@ package ru.kvaytg.coremc.limits;
 import org.bukkit.entity.Entity;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntitySpawnEvent;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.utils.BukkitUtils;
 
 public class DisableEntityAiHandler extends LimitHandler {
 
-    public DisableEntityAiHandler(RichWorld plugin) {
+    public DisableEntityAiHandler(CoreMc plugin) {
         super(plugin, "mobAi");
     }
 

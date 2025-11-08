@@ -5,14 +5,14 @@ import org.bukkit.attribute.AttributeInstance;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerJoinEvent;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 
 public class HeartsHandler extends PerkHandler {
 
     private int maxHealth;
     private boolean restore;
 
-    public HeartsHandler(RichWorld plugin) {
+    public HeartsHandler(CoreMc plugin) {
         super(plugin, "maxHearts");
     }
 

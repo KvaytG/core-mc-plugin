@@ -2,7 +2,7 @@ package ru.kvaytg.coremc.vanish;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.utils.BukkitUtils;
 import java.util.HashSet;
 import java.util.Set;
@@ -11,10 +11,10 @@ public enum VanishManager {
 
     INSTANCE;
 
-    private RichWorld plugin;
+    private CoreMc plugin;
     private Set<Player> vanishedPlayers;
 
-    public void init(RichWorld plugin) {
+    public void init(CoreMc plugin) {
         this.plugin = plugin;
         this.vanishedPlayers = new HashSet<>();
         BukkitUtils.registerHandler(new VanishHandler(plugin, this), plugin);

@@ -8,7 +8,7 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.*;
 import org.bukkit.inventory.ItemStack;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.component.AbstractHandler;
 import ru.kvaytg.coremc.config.ConfigManager;
 import ru.kvaytg.coremc.config.JoinItemsConfig;
@@ -17,10 +17,10 @@ import java.util.Set;
 
 public class JoinItemsHandler extends AbstractHandler {
 
-    private final RichWorld plugin;
+    private final CoreMc plugin;
     private final JoinItemsConfig config;
 
-    public JoinItemsHandler(RichWorld plugin) {
+    public JoinItemsHandler(CoreMc plugin) {
         super(plugin, true);
         this.plugin = plugin;
         this.config = ConfigManager.INSTANCE.getJoinItemsConfig();

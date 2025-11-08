@@ -3,11 +3,11 @@ package ru.kvaytg.coremc.hidestream;
 import net.kyori.adventure.text.Component;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.PlayerDeathEvent;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 
 public class DeathHandler extends HideStreamHandler {
 
-    public DeathHandler(RichWorld plugin) {
+    public DeathHandler(CoreMc plugin) {
         super(plugin, "death");
     }
 

@@ -1,6 +1,6 @@
 package ru.kvaytg.coremc.config;
 
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 
 public enum ConfigManager {
 
@@ -10,7 +10,7 @@ public enum ConfigManager {
     private WarpConfig warpConfig;
     private JoinItemsConfig joinItemsConfig;
 
-    public void init(RichWorld plugin) {
+    public void init(CoreMc plugin) {
         new MessageConfig(plugin);
         new PermissionConfig(plugin);
         mainConfig = new MainConfig(plugin);

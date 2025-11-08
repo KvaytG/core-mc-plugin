@@ -1,6 +1,6 @@
 package ru.kvaytg.coremc.component;
 
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 import ru.kvaytg.coremc.config.ConfigManager;
 import ru.kvaytg.coremc.config.constants.ConfigParameter;
 import ru.kvaytg.coremc.config.constants.ConfigSection;
@@ -12,7 +12,7 @@ public abstract class AutoConfigurableHandler extends AbstractHandler {
 
     private final DotPath baseConfigPath;
 
-    public AutoConfigurableHandler(RichWorld plugin,
+    public AutoConfigurableHandler(CoreMc plugin,
                                    DotPath configPath,
                                    String enablingParameter) {
         super(plugin, ConfigSection.isEnabled(
@@ -24,7 +24,7 @@ public abstract class AutoConfigurableHandler extends AbstractHandler {
         onInit();
     }
 
-    public AutoConfigurableHandler(RichWorld plugin,
+    public AutoConfigurableHandler(CoreMc plugin,
                                    DotPath configPath) {
         this(plugin, configPath, ConfigParameter.ENABLED.getName());
     }

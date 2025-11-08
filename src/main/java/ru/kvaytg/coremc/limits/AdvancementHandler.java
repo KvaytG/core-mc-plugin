@@ -4,11 +4,11 @@ import org.bukkit.advancement.Advancement;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.PlayerAdvancementDoneEvent;
-import ru.kvaytg.coremc.RichWorld;
+import ru.kvaytg.coremc.CoreMc;
 
 public class AdvancementHandler extends LimitHandler {
 
-    public AdvancementHandler(RichWorld plugin) {
+    public AdvancementHandler(CoreMc plugin) {
         super(plugin, "advancements");
     }
 
