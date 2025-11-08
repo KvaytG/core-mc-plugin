@@ -3,7 +3,6 @@ author: KvaytG
 main: ru.kvaytg.coremc.RichWorld
 version: 1.0.0
 api-version: 1.13
-depend: [ColorAPI]
 commands:
     kick:
         description: "Kick player. @all for the Console only"
