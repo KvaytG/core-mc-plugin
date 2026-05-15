@@ -1,0 +1,21 @@
+name: CoreMc
+authors: [KvaytG]
+version: 1.0.0
+main: ru.kvaytg.coremc.CoreMc
+softdepend: [RichWorlds]
+commands:
+    kick:
+        description: "Kick player. @all for the Console only"
+        usage: "/kick <player|@all> <reason>"
+    kill:
+        description: "Kill player. @all for the Console only"
+        usage: "/kill <player|@all>"
+    vanish:
+        description: "Turn On/Off invisibility mode"
+        usage: "/vanish [player]"
+    warp:
+        description: "Teleport to warp"
+        usage: "/warp <warp> [player]"
+    fly:
+        description: "Turn On/Off fly mode"
+        usage: "/fly"
